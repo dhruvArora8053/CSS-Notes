@@ -41,4 +41,32 @@ body {
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* clip-path: polygon( 50% 0, 100% 100%, 0 100%); , checkout clippy on resources page*/
+
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+  /* width will automatically be figure out by the browser */
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.heading-primary-main {
+    /* to make line break represent both of them as block-level elements */
+    display: block;
+}
+
+.heading-primary-sub {
+    display: block;
 }
