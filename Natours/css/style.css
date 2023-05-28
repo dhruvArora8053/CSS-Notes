@@ -8,14 +8,16 @@ Dark green: #28b485
 */
 
 /* DEFAULTS */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
@@ -28,6 +30,8 @@ body {
 
   /* not-default */
   padding: 3rem;
+
+  box-sizing: border-box;
 }
 
 /* HEADER */
@@ -165,6 +169,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
