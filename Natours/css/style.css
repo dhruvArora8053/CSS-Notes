@@ -38,6 +38,12 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box; }
+
+/* .logo:hover{
+    animation: moveInRight 1s ease-out;
+} */
+body {
   /* inheritance */
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -45,8 +51,36 @@ body {
   line-height: 1.7;
   color: #777;
   /* not-default */
-  padding: 3rem;
-  box-sizing: border-box; }
+  padding: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  /* if fix the little-shaking that the animation property does */
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    /* to make line break represent both of them as block-level elements */
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* 
+      animation-delay: 3s;
+      animation-iteration-count: 3;
+       */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    /* animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; */
+    animation: moveInRight 1s ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -119,35 +153,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-
-/* .logo:hover{
-    animation: moveInRight 1s ease-out;
-} */
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  /* if fix the little-shaking that the animation property does */
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    /* to make line break represent both of them as block-level elements */
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* 
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-     */ }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    /* animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; */
-    animation: moveInRight 1s ease-out; }

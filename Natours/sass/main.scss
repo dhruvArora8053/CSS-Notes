@@ -9,85 +9,8 @@
 
 @import "components/button";
 
+@import "layout/header";
+
 @import "pages/home";
 
-/* HEADER */
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  /* now the top will remain fixed but bottom will get cropped */
 
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /* clip-path: polygon( 50% 0, 100% 100%, 0 100%); , checkout clippy on resources page*/
-
-  position: relative;
-
-  &__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-  }
-
-  &__logo {
-    height: 3.5rem;
-    /* width will automatically be figure out by the browser */
-  }
-  &__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-}
-
-/* .logo:hover{
-    animation: moveInRight 1s ease-out;
-} */
-
-.heading-primary {
-  color: $color-white;
-  text-transform: uppercase;
-
-  backface-visibility: hidden;
-  /* if fix the little-shaking that the animation property does */
-  margin-bottom: 6rem;
-
-  &--main {
-    /* to make line break represent both of them as block-level elements */
-    display: block;
-
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-
-    /* 
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-     */
-  }
-
-  &--sub {
-    display: block;
-
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-
-    /* animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; */
-    animation: moveInRight 1s ease-out;
-  }
-}
