@@ -12,5 +12,14 @@
       rgba($color-primary-dark, 0.8)
     ),
     url(../img/nat-4.jpg);
-    background-size: cover;
+  background-size: cover;
+
+  transform: skewY(-7deg);
+  margin-top: -11rem;
+
+  & > * {
+    transform: skewY(7deg);
+
+  }
+  //.section-features > * (> -- driect childs, * -- all)
 }
