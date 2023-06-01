@@ -441,3 +441,78 @@ body {
   background-color: yellowgreen;
   flex: 1;
 }
+
+/* /////////////////////////////////////////////// */
+/* PARAGRAPH */
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+/* /////////////////////////////////////////////// */
+/* LIST */
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid var(--color-grey-light-3);
+  border-bottom: 1px solid var(--color-grey-light-3);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.7rem;
+
+  /* Older browsers */
+  /* background-image: url(img/chevron-thin-right.svg);
+  background-size: cover; */
+
+  /* Newer browsers */
+  background-color: var(--color-primary);
+  /* now we will look through mask to see the backgound color using an icon */
+  -webkit-mask-image: url(img/chevron-thin-right.svg);
+  /* covering the entire element */
+  -webkit-mask-size: cover;
+  /* without prefix */
+  mask-size: cover;
+}
+
+/* /////////////////////////////////////////////// */
+/* RECOMMEND */
+.recommend{
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  align-items: center;
+}
+
+.recommend__count{
+margin-right: auto;
+}
+
+.recommend__friends{
+
+}
+
+.recommend__photo{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-sizing: content-box;
+}
+
+.recommend__photo:not(:last-child){
+  margin-right: -1.5rem;
+}
