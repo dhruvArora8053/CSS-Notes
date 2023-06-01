@@ -315,34 +315,36 @@ body {
 /* /////////////////////////////////////////////// */
 /* OVERVIEW */
 
-.overview{
-
+.overview {
+  display: flex;
+  /* justify-content: space-between; */
 }
 
-.overview__heading{
-
+.overview__heading {
 }
 
-.overview__stars{
+.overview__stars {
+  /* flex: 1; */
 
+  /* important  */
+  margin-right: auto;
 }
 
-.overview__icon-star,.overview__icon-location{
-
+.overview__icon-star,
+.overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary);
 }
 
-.overview__location{
-
+.overview__location {
 }
 
-.overview__rating{
-
+.overview__rating {
 }
 
-.overview__rating-average{
-
+.overview__rating-average {
 }
 
-.overview__rating-count{
-  
+.overview__rating-count {
 }
