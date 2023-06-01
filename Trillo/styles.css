@@ -570,10 +570,10 @@ body {
   font-weight: 300;
 }
 
-.review::before{
+.review::before {
   content: "\201C";
   position: absolute;
-  top: -2.75rem; 
+  top: -2.75rem;
   left: -1rem;
   line-height: 1;
   font-size: 20rem;
@@ -582,11 +582,54 @@ body {
   z-index: 1;
 }
 
-.btn-inline span{
+.btn-inline span {
   margin-left: 3px;
   transition: margin-left 0.2s;
 }
 
-.btn-inline:hover span{
+.btn-inline:hover span {
   margin-left: 8px;
+}
+
+/* /////////////////////////////////////////////// */
+/* CALL TO ACTION */
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+  background-color: white;
+}
+
+.cta__book-now {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+/* /////////////////////////////////////////////// */
+/* CALL TO ACTION */
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  color: #fff;
+}
+
+.btn__visible {
+  display: inline-block;
+  padding: 2rem 7.5rem;
+}
+
+.btn__invisible {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -100%;
 }
