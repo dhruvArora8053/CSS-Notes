@@ -11,9 +11,11 @@
         background-color: #ddd;
 
         display: grid;
-        grid-template-rows: repeat(2, 150px);
-        grid-template-columns: max-content  1fr 1fr max-content;
+        /* grid-template-rows: repeat(2, 150px); */
+        grid-template-columns: max-content 1fr 1fr min-content;
         /* max-content: makes it wide to fit the content */
+
+        grid-template-rows: repeat(2, min-content);
       }
 
       .item {
@@ -64,11 +66,13 @@
       <div class="item item--2">CSS</div>
       <div class="item item--3">with</div>
       <div class="item item--4">Flexbox</div>
-      <!-- implicit grid     -->
+      implicit grid    
       <div class="item item--5">and</div>
       <div class="item item--6">Grid</div>
       <div class="item item--7">is</div>
-      <div class="item item--8">Great</div>
+      <div class="item item--8">
+        Great and awesome and just amazing to work with
+      </div>
     </div>
   </body>
 </html>
