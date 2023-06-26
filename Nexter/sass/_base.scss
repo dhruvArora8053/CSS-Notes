@@ -43,4 +43,10 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] 1fr [full-end];
+
+  //selecting containers all direct children
+  & > * {
+    padding: 40px;
+    font-size: 3rem;
+  }
 }
